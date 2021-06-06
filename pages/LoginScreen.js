@@ -65,8 +65,8 @@ const LoginScreen = ({navigation}) => {
                               autoCapitalize = 'none'
                               isPassword
                               togglePassword={false}
-                              customShowPasswordComponent={<Icon name="lock" style={styles.passIcon} />}
-                              customHidePasswordComponent={<Icon name="unlock" style={styles.passIcon} />}
+                              customShowPasswordComponent={<Icon name="eye" style={styles.passIcon} />}
+                              customHidePasswordComponent={<Icon name="eye-slash" style={styles.passIcon} />}
                             />
                             <View style={styles.button}>
                                 <TouchableOpacity
@@ -79,11 +79,11 @@ const LoginScreen = ({navigation}) => {
                                 <TouchableOpacity
                                   onPress={() => navigation.navigate('API')}
                                   style={styles.bottomPannel}>
-                                    <Icon name="code" style={styles.bottomPanelIcon} />
+                                    <Icon name="file-code" style={styles.bottomPanelIcon} />
                                     <Text>APIテスト</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
-                                    <Icon name="fingerprint" style={styles.bottomPanelIcon} />
+                                    <Icon name="hdd" style={styles.bottomPanelIcon} />
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
@@ -91,7 +91,7 @@ const LoginScreen = ({navigation}) => {
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
-                                    <Icon name="th-large" style={styles.bottomPanelIcon} />
+                                    <Icon name="bell" style={styles.bottomPanelIcon} />
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                             </View>

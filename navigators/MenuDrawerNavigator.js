@@ -21,7 +21,7 @@ const MenuDrawerNavigator = () => {
                     <TouchableOpacity
                       style={{paddingLeft: 10}}
                       onPress={() => navigation.openDrawer()}>
-                        <Icon name="bars" size={24} />
+                        <Icon name="folder" size={24} />
                     </TouchableOpacity>
                 )
             },
@@ -29,7 +29,7 @@ const MenuDrawerNavigator = () => {
                 return(
                     <TouchableOpacity
                       style={{paddingRight: 10}}>
-                        <Icon name="cog" size={24} />
+                        <Icon name="bell" size={24} />
                     </TouchableOpacity>
                 )
             }
