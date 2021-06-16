@@ -1,7 +1,7 @@
 import React from "react";
 import {TouchableOpacity} from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Feather from '@expo/vector-icons/Feather';
 
 import Home from '../pages/HomeScreen';
 import New from '../pages/NewScreen';
@@ -21,7 +21,7 @@ const MenuDrawerNavigator = () => {
                     <TouchableOpacity
                       style={{paddingLeft: 10}}
                       onPress={() => navigation.openDrawer()}>
-                        <Icon name="folder" size={24} />
+                        <Feather name="menu" size={24} />
                     </TouchableOpacity>
                 )
             },
@@ -29,7 +29,7 @@ const MenuDrawerNavigator = () => {
                 return(
                     <TouchableOpacity
                       style={{paddingRight: 10}}>
-                        <Icon name="bell" size={24} />
+                        <Feather name="bell" size={24} />
                     </TouchableOpacity>
                 )
             }
