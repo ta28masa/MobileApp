@@ -10,7 +10,8 @@ import {
   } from 'react-native';
 import {FloatingLabelInput} from 'react-native-floating-label-input';
 import * as Animatable from 'react-native-animatable';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Feather from '@expo/vector-icons/Feather';
+import Entypo from '@expo/vector-icons/Entypo';
 import apicall from '../common/apicall';
 import utils from '../common/util'
 import colors from '../common/colors'
@@ -65,8 +66,8 @@ const LoginScreen = ({navigation}) => {
                               autoCapitalize = 'none'
                               isPassword
                               togglePassword={false}
-                              customShowPasswordComponent={<Icon name="eye" style={styles.passIcon} />}
-                              customHidePasswordComponent={<Icon name="eye-slash" style={styles.passIcon} />}
+                              customShowPasswordComponent={<Feather name="eye-off" style={styles.passIcon} />}
+                              customHidePasswordComponent={<Feather name="eye" style={styles.passIcon} />}
                             />
                             <View style={styles.button}>
                                 <TouchableOpacity
@@ -79,19 +80,19 @@ const LoginScreen = ({navigation}) => {
                                 <TouchableOpacity
                                   onPress={() => navigation.navigate('API')}
                                   style={styles.bottomPannel}>
-                                    <Icon name="file-code" style={styles.bottomPanelIcon} />
+                                    <Entypo name="code" style={styles.bottomPanelIcon} />
                                     <Text>APIテスト</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
-                                    <Icon name="hdd" style={styles.bottomPanelIcon} />
+                                    <Entypo name="fingerprint" style={styles.bottomPanelIcon} />
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
-                                    <Icon name="comments" style={styles.bottomPanelIcon} />
+                                    <Feather name="message-square" style={styles.bottomPanelIcon} />
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.bottomPannel}>
-                                    <Icon name="bell" style={styles.bottomPanelIcon} />
+                                    <Feather name="bell" style={styles.bottomPanelIcon} />
                                     <Text>工事中</Text>
                                 </TouchableOpacity>
                             </View>
